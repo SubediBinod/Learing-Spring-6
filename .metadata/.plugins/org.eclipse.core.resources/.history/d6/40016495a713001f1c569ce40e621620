@@ -1,0 +1,24 @@
+package com.Binod.app;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class MyFirstApplication {
+
+	public static void main(String[] args) {
+		//run returns  ApplicationContext so we will store it
+		
+		 ApplicationContext context=SpringApplication.run(MyFirstApplication.class, args);
+		
+		
+		//old method of invoking Print() by instancing an object
+		// obj= new Binod();
+		//obj.print();
+		
+		//we will use Application context 
+		
+	}
+
+}
