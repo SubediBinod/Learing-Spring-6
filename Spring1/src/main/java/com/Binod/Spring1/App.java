@@ -37,6 +37,12 @@ public class App
     	// 2. injecting reference
     	obj1.callProgrammer();
     	
+    	
+    	
+    	//Constructor injection
+    	
+    	//Luffy obj2 = (Luffy)context.getBean("luffy");
+ 
     }
 }
 

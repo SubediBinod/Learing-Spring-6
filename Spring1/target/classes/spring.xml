@@ -16,5 +16,11 @@
 
 </bean>
 
+<bean id="luffy" class="com.Binod.Spring1.Luffy">
+<constructor-arg index="0" value="19"/>
+<constructor-arg index="1" value="Orewa Luffy, Kaizoku Ou ni, ore wa naru!"/>
+
+</bean>
+
 
 </beans>
