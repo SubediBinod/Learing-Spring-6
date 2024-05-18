@@ -6,5 +6,8 @@
 
     <bean id="programmer" class="com.Binod.Spring1.Programmer">
 </bean>
+<bean id="Coder" class="com.Binod.Spring1.coder">
+<property name="age" value="30"></property>
+</bean>
 
 </beans>
