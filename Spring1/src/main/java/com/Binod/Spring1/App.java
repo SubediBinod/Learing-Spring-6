@@ -28,9 +28,14 @@ public class App
 //    		3.Execute other parts
     	//make sure that the class is not declared private.
     	
+    	// 1. injecting value
+    	
     	coder obj1 = (coder) context.getBean("Coder");  
     	System.out.println("the age defined through the setter injectio is "+ obj1.getAge());
     	
+    	
+    	// 2. injecting reference
+    	obj1.callProgrammer();
     	
     }
 }
