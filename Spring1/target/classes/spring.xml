@@ -4,23 +4,24 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="programmer" class="com.Binod.Spring1.Programmer">
-</bean>
-<bean id="Coder" class="com.Binod.Spring1.coder">
+<!--     <bean id="programmer" class="com.Binod.Spring1.Programmer"> -->
+<!-- </bean> -->
+<bean id="Coder" class="com.Binod.Spring1.coder" autowire="byName">
 
 <!-- injecting values -->
 <property name="age" value="30"></property>
 
-<!-- injecting reference -->
-<property name="pro" ref="programmer"></property>
+ <!-- injecting reference -->
+<!-- <property name="pro" ref="programmer"></property> -->
 
 </bean>
 
-<bean id="luffy" class="com.Binod.Spring1.Luffy">
-<constructor-arg index="0" value="19"/>
-<constructor-arg index="1" value="Orewa Luffy, Kaizoku Ou ni, ore wa naru!"/>
+<!-- <bean id="luffy" class="com.Binod.Spring1.Luffy"> -->
+<!-- <constructor-arg index="0" value="19"/> -->
+<!-- <constructor-arg index="1" value="Orewa Luffy, Kaizoku Ou ni, ore wa naru!"/> -->
 
+<!-- </bean> -->
+<bean id="hum" class="com.Binod.Spring1.Programmer">
 </bean>
-
 
 </beans>

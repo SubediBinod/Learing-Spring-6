@@ -10,15 +10,15 @@ public class App
         
     	
     	ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml"); //makesure to have spring bean xml config
-    	Programmer obj= (Programmer) context.getBean("programmer");
+    	//Programmer obj= (Programmer) context.getBean("programmer");
 //    	
 //    	//mathi ko step le Container banaux 
 //    	//steps::
 //    		//pom.xml ma Spring context dependecny halne
 //    		//ewta xml file banaune
 //    		//spring xml beans config google bata liyerw paste garne
-    	obj.doCode();
-//    	
+//    	obj.doCode();
+    	
     	
     	// setter injection
     	// we use <property> tag in out xml file
@@ -30,19 +30,20 @@ public class App
     	
     	// 1. injecting value
     	
-    	coder obj1 = (coder) context.getBean("Coder");  
-    	System.out.println("the age defined through the setter injectio is "+ obj1.getAge());
-    	
-    	
-    	// 2. injecting reference
-    	obj1.callProgrammer();
-    	
+  	coder obj1 = (coder) context.getBean("Coder");  
+   	System.out.println("the age defined through the setter injectio is "+ obj1.getAge());
+//    	
+//    	
+//    	// 2. injecting reference
+      	obj1.callProgrammer();
+//    	
     	
     	
     	//Constructor injection
     	
     	//Luffy obj2 = (Luffy)context.getBean("luffy");
  
+    	
     }
 }
 
