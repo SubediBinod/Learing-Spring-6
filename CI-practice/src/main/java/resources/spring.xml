@@ -17,6 +17,40 @@
         <value>Dog</value>
         </list>
         </constructor-arg>
-        
         </bean>
+        <bean id="bean3" class="NonStringCollection_ConstructorInjection.Team">
+        <constructor-arg value="Real Madrid"/>
+        <constructor-arg>
+        <list>
+        <ref bean="madrid1"/>
+        <ref bean="madrid2"/>
+        <ref bean="madrid3"/>
+        <ref bean="madrid4"/>
+        </list>
+        </constructor-arg>
+        </bean>
+        <bean id="madrid1" class="NonStringCollection_ConstructorInjection.Player">
+    <constructor-arg value="Vinicius Junior"/>
+    <constructor-arg value="07"/>
+    <constructor-arg value="Forward"/>
+</bean>
+
+<bean id="madrid2" class="NonStringCollection_ConstructorInjection.Player">
+    <constructor-arg value="Jude Bellingham"/>
+    <constructor-arg value="05"/>
+    <constructor-arg value="Midfielder"/>
+</bean>
+
+<bean id="madrid3" class="NonStringCollection_ConstructorInjection.Player">
+    <constructor-arg value="Fede Valverde"/>
+    <constructor-arg value="15"/>
+    <constructor-arg value="Midfielder"/>
+</bean>
+
+<bean id="madrid4" class="NonStringCollection_ConstructorInjection.Player">
+    <constructor-arg value="Rodrigo"/>
+    <constructor-arg value="11"/>
+    <constructor-arg value="Forward"/>
+</bean>
+
 </beans>
